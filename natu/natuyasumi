@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f9f9;
+  color: #333;
+}
+
+.hero {
+  background-image: url('river-header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.memory {
+  margin-bottom: 3rem;
+}
+
+.memory h2 {
+  color: #007a66;
+}
+
+.memory-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #007a66;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
